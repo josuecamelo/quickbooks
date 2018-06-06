@@ -24,6 +24,7 @@ $url = $OAuth2LoginHelper->getAuthorizationCodeURL();
 
 header("Location: $url");
 
+
 //It will return something like:https://b200efd8.ngrok.io/OAuth2_c/OAuth_2/OAuth2PHPExample.php?state=RandomState&code=Q0115106996168Bqap6xVrWS65f2iXDpsePOvB99moLCdcUwHq&realmId=193514538214074
 //get the Code and realmID, use for the exchangeAuthorizationCodeForToken
 $accessToken = $OAuth2LoginHelper->exchangeAuthorizationCodeForToken("Q01152829543905ozO9T6JnJEHF1pFvOHlk5H1bwRmidSPDvzj", "123146079694899");
